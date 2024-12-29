@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaffen tötet - Beispielwebsite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eb003c; /* Neue Hintergrundfarbe Rot */
+            color: #ffffff; /* Textfarbe weiß */
+        }
+        header {
+            background-color: #050a48; /* Neue Blaue Farbe */
+            color: #ffffff; /* Weiß */
+            text-align: center;
+            padding: 20px 0;
+        }
+        header img {
+            max-width: 100%; /* Anpassung für mobile Geräte */
+            width: 200px; /* Maximale Breite */
+            height: auto;
+        }
+        header h1 {
+            font-size: 4rem; /* Größere Schriftgröße */
+            margin: 0;
+        }
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .main-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .main-content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .images-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .images-section div {
+            text-align: center;
+            width: 100%; /* Anpassung für kleinere Bildschirme */
+            max-width: 300px; /* Maximale Breite der Bilder */
+        }
+        .images-section img {
+            width: 100%; /* Bild nimmt 100% der Breite des Containers ein */
+            height: auto;
+            border: 2px solid #ffffff; /* Weiß */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        .image-text {
+            font-size: 1rem;
+            font-weight: bold; /* Fett */
+            color: #ffffff; /* Weiß */
+            margin-top: 10px; /* Abstand zwischen Bild und Text */
+        }
+        .highlighted-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Text untereinander */
+            text-align: center;
+            margin: 40px 0;
+            height: 200px; /* Höhe für den Bereich */
+        }
+        .highlighted-text .yellow-text {
+            color: #ffcc00; /* Gelb */
+            font-size: 1.5rem;
+            font-weight: bold; /* Fett */
+            margin-bottom: 10px;
+        }
+        .highlighted-text .white-text {
+            color: #ffffff; /* Weiß */
+            font-size: 1.2rem;
+        }
+        .button-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .button-section p {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        .button-section .button {
+            display: inline-block;
+            background-color: #050a48; /* Neue Blaue Farbe */
+            color: #ffffff; /* Weiß */
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .button-section .button:hover {
+            background-color: #1a1f66; /* Etwas helleres Blau */
+        }
+        footer {
+            background-color: #050a48; /* Neue Blaue Farbe */
+            color: #ffffff; /* Weiß */
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media Queries für kleinere Bildschirme */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem; /* Kleinere Schriftgröße für Smartphones */
+            }
+            .main-content h1 {
+                font-size: 2rem; /* Kleinere Schriftgröße */
+            }
+            .images-section {
+                flex-direction: column; /* Bilder untereinander auf mobilen Geräten */
+                gap: 10px; /* Weniger Abstand zwischen den Bildern */
+            }
+            .highlighted-text .yellow-text {
+                font-size: 1.2rem; /* Kleinere Schriftgröße für den gelben Text */
+            }
+            .button-section .button {
+                font-size: 0.9rem; /* Kleinere Schriftgröße für Buttons */
+                padding: 8px 16px; /* Weniger Padding für Buttons */
+            }
+        }
+
+        /* Für noch kleinere Bildschirme, z.B. auf Smartphones */
+        @media (max-width: 480px) {
+            .button-section .button {
+                width: 100%; /* Buttons nehmen die volle Breite ein */
+                padding: 12px; /* Mehr Padding */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://media.discordapp.net/attachments/1322701969940418632/1322702982814371870/Bild_2024-12-29_000901723-removebg-preview.png?ex=6771d6a5&is=67708525&hm=c86c36daff1d7ccbbb0bd5d1986bba3879a44b6d0583b52c0602a0d39b4edb6e&=&format=webp&quality=lossless" alt="Logo">
+        <h1>Achtung!</h1>
+        <h1>Gaffen tötet!</h1>
+        <p>
+           Es kann Rettungskräfte behindern und zur Straftat werden.
+        </p>
+    </header>
+
+    <div class="main-content">
+        <h1>Stoppt Gaffen!</h1>
+        <p>
+           Gaffen gefährdet Leben. Helfen Sie mit, Unfallstellen sicher zu machen, und respektieren Sie die Privatsphäre der Betroffenen.
+        </p>
+    </div>
+
+    <div class="images-section">
+        <div>
+            <img src="https://media.discordapp.net/attachments/1322701969940418632/1322711181282115636/image.png?ex=6771de48&is=67708cc8&hm=8444700d04fb922f7b5d9c07466785fe51a7bcabc14f94249b1f3c01e7057c1b&=&format=webp&quality=lossless" alt="Bild 1">
+            <p class="image-text">Halte die Unfallstelle frei.</p>
+        </div>
+        <div>
+            <img src="https://media.discordapp.net/attachments/1322701969940418632/1322711532810932284/image.png?ex=6771de9c&is=67708d1c&hm=03e3b3a91b826f66eafc5855b017370bfd7631930828be2cf146249c8ddea0d0&=&format=webp&quality=lossless" alt="Bild 2">
+            <p class="image-text">Lasse die</p>
+          <p class="image-text">Rettungskräfte arbeiten.</p>
+        </div>
+        <div>
+            <img src="https://media.discordapp.net/attachments/1322701969940418632/1322712130767683646/image.png?ex=6771df2a&is=67708daa&hm=c351946d99d63f4a254f5f48a3ce804e693543b627e6eb0bfe3ef822066df7a9&=&format=webp&quality=lossless" alt="Bild 3">
+            <p class="image-text">Mache keine</p>
+          <p class="image-text">Fotos oder Videos.</p>
+        </div>
+    </div>
+
+    <div class="highlighted-text">
+        <p class="yellow-text">Seit dem 01.01.2021 ist Gaffen gemäß § 201a StGB</p>
+        <p class="yellow-text">eine Straftat, die mit bis zu zwei Jahren Haft</p>
+        <p class="yellow-text">bestraft werden kann.</p>
+    </div>
+
+    <div class="main-content">
+        <p>
+            Danke, dass du dich richtig verhältst!
+        </p>
+    </div>
+
+    <div class="button-section">
+        <p>Mehr erfahren:</p>
+        <a href="https://discord.gg/fkNe96TQme" class="button">Discord</a>
+        <a href="#" class="button">Website</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gaffen tötet. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
